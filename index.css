@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #93bae3; /* Blue background color */
+}
+
+.title {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: rgba(135, 125, 125, 0.863); /* Glassmorphism effect */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); /* Glassmorphism effect */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.card-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-content {
+  backface-visibility: hidden;
+}
+
+.question {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-button {
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.5); /* Glassmorphism effect */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.flip-button {
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.5); /* Glassmorphism effect */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.score {
+  font-size: 18px;
+  color: white;
+}
