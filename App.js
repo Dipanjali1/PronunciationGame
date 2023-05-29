@@ -75,7 +75,7 @@ const CardGame = () => {
       const timer = setTimeout(() => {
         setIsFlipped(false);
         setCurrentQuestion((prevQuestion) => prevQuestion + 1);
-      }, 1500); // Adjust the delay as needed
+      }, 1500); 
 
       return () => clearTimeout(timer);
     }
